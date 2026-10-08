@@ -1,0 +1,23 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Raw Data (large downloaded zip/csv, can be fetched via reproduce.py)
+data/raw/*.zip
+data/raw/*.csv
+data/raw/bank-additional/
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

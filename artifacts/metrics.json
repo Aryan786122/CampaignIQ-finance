@@ -1,0 +1,255 @@
+{
+  "dataset_summary": {
+    "total_test_samples": 6179,
+    "test_positive_count": 2376,
+    "test_negative_count": 3803,
+    "test_baseline_prevalence": 0.38452824081566594,
+    "naive_majority_class_accuracy": 0.615471759184334
+  },
+  "ranking_metrics": {
+    "average_precision_pr_auc": 0.43711949960021634,
+    "roc_auc": 0.5592337057134585
+  },
+  "classification_metrics": {
+    "decision_threshold": 0.6957442037146341,
+    "accuracy": 0.5724227221233209,
+    "precision": 0.45160116448326054,
+    "recall": 0.5223063973063973,
+    "f1_score": 0.4843871975019516,
+    "confusion_matrix": [
+      [
+        2296,
+        1507
+      ],
+      [
+        1135,
+        1241
+      ]
+    ],
+    "accuracy_warning": "Test dataset has a baseline positive rate of 38.5%. A naive classifier predicting 0 for all customers yields 61.5% accuracy while finding 0 interested customers. Hence PR-AUC and Lift-at-K are the primary decision metrics."
+  },
+  "outreach_decision_metrics": {
+    "5%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.05,
+      "k_selected": 309,
+      "observed_positives": 159,
+      "precision_at_k": 0.5145631067961165,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 118.81922641204078,
+      "lift_at_k": 1.3381672714196986,
+      "positive_capture_rate": 0.06691919191919192,
+      "interpretation": "At a 5% outreach budget (309 customers selected out of 6,179), the model-prioritized list contains 159 historical positive responses, compared with 118.8 expected under uniform random selection (1.34x lift)."
+    },
+    "10%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.1,
+      "k_selected": 618,
+      "observed_positives": 296,
+      "precision_at_k": 0.47896440129449835,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 237.63845282408155,
+      "lift_at_k": 1.2455896614472666,
+      "positive_capture_rate": 0.12457912457912458,
+      "interpretation": "At a 10% outreach budget (618 customers selected out of 6,179), the model-prioritized list contains 296 historical positive responses, compared with 237.6 expected under uniform random selection (1.25x lift)."
+    },
+    "15%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.15,
+      "k_selected": 927,
+      "observed_positives": 425,
+      "precision_at_k": 0.45846817691477887,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 356.4576792361223,
+      "lift_at_k": 1.192287401160109,
+      "positive_capture_rate": 0.17887205387205388,
+      "interpretation": "At a 15% outreach budget (927 customers selected out of 6,179), the model-prioritized list contains 425 historical positive responses, compared with 356.5 expected under uniform random selection (1.19x lift)."
+    },
+    "20%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.2,
+      "k_selected": 1236,
+      "observed_positives": 527,
+      "precision_at_k": 0.42637540453074435,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 475.2769056481631,
+      "lift_at_k": 1.1088272830789012,
+      "positive_capture_rate": 0.2218013468013468,
+      "interpretation": "At a 20% outreach budget (1,236 customers selected out of 6,179), the model-prioritized list contains 527 historical positive responses, compared with 475.3 expected under uniform random selection (1.11x lift)."
+    },
+    "25%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.25,
+      "k_selected": 1545,
+      "observed_positives": 676,
+      "precision_at_k": 0.4375404530744337,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 594.0961320602039,
+      "lift_at_k": 1.1378629880248003,
+      "positive_capture_rate": 0.2845117845117845,
+      "interpretation": "At a 25% outreach budget (1,545 customers selected out of 6,179), the model-prioritized list contains 676 historical positive responses, compared with 594.1 expected under uniform random selection (1.14x lift)."
+    },
+    "30%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.3,
+      "k_selected": 1854,
+      "observed_positives": 809,
+      "precision_at_k": 0.43635382955771307,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 712.9153584722446,
+      "lift_at_k": 1.134777067692386,
+      "positive_capture_rate": 0.3404882154882155,
+      "interpretation": "At a 30% outreach budget (1,854 customers selected out of 6,179), the model-prioritized list contains 809 historical positive responses, compared with 712.9 expected under uniform random selection (1.13x lift)."
+    },
+    "40%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.4,
+      "k_selected": 2472,
+      "observed_positives": 1123,
+      "precision_at_k": 0.45428802588996764,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 950.5538112963262,
+      "lift_at_k": 1.1814165454436492,
+      "positive_capture_rate": 0.47264309764309764,
+      "interpretation": "At a 40% outreach budget (2,472 customers selected out of 6,179), the model-prioritized list contains 1,123 historical positive responses, compared with 950.6 expected under uniform random selection (1.18x lift)."
+    },
+    "50%": {
+      "total_customers": 6179,
+      "outreach_ratio": 0.5,
+      "k_selected": 3090,
+      "observed_positives": 1365,
+      "precision_at_k": 0.441747572815534,
+      "baseline_prevalence": 0.38452824081566594,
+      "expected_random_positives": 1188.1922641204078,
+      "lift_at_k": 1.1488039782942696,
+      "positive_capture_rate": 0.5744949494949495,
+      "interpretation": "At a 50% outreach budget (3,090 customers selected out of 6,179), the model-prioritized list contains 1,365 historical positive responses, compared with 1188.2 expected under uniform random selection (1.15x lift)."
+    }
+  },
+  "primary_outreach_result": {
+    "total_customers": 6179,
+    "outreach_ratio": 0.2,
+    "k_selected": 1236,
+    "observed_positives": 527,
+    "precision_at_k": 0.42637540453074435,
+    "baseline_prevalence": 0.38452824081566594,
+    "expected_random_positives": 475.2769056481631,
+    "lift_at_k": 1.1088272830789012,
+    "positive_capture_rate": 0.2218013468013468,
+    "interpretation": "At a 20% outreach budget (1,236 customers selected out of 6,179), the model-prioritized list contains 527 historical positive responses, compared with 475.3 expected under uniform random selection (1.11x lift)."
+  },
+  "calibration": {
+    "brier_score": 0.33515686919238946,
+    "quantile_bins": {
+      "mean_predicted_probabilities": [
+        0.43301597549978943,
+        0.5798835939475779,
+        0.6704304092595204,
+        0.788124504070915,
+        0.9058220888148764
+      ],
+      "empirical_positive_rates": [
+        0.35436893203883496,
+        0.2977346278317152,
+        0.3616504854368932,
+        0.4825910931174089,
+        0.42637540453074435
+      ]
+    }
+  },
+  "model_selection": {
+    "selected_model": "LogisticRegression",
+    "selection_rationale": "LogisticRegression achieved higher validation Average Precision (0.1870 vs 0.1442) with strong linear baseline interpretability.",
+    "logistic_regression": {
+      "val_average_precision": 0.18696497517759175,
+      "val_roc_auc": 0.6565890544469407,
+      "val_brier_score": 0.3599419468488323,
+      "val_optimal_threshold": 0.6957442037146341,
+      "val_optimal_f1": 0.2807357212003872
+    },
+    "gradient_boosting": {
+      "val_average_precision": 0.14421499485885494,
+      "val_roc_auc": 0.5777128485529271,
+      "val_brier_score": 0.4010959585460679,
+      "val_optimal_threshold": 0.7461322336893851,
+      "val_optimal_f1": 0.22251655629139072
+    },
+    "chosen_threshold": 0.6957442037146341
+  },
+  "failure_analysis": {
+    "false_positives_sample": [
+      {
+        "y_score": 0.9921271558446506,
+        "euribor3m": 0.942,
+        "poutcome": "success",
+        "age": 30,
+        "job": "technician"
+      },
+      {
+        "y_score": 0.9914640196197579,
+        "euribor3m": 1.043,
+        "poutcome": "success",
+        "age": 23,
+        "job": "student"
+      },
+      {
+        "y_score": 0.9866522806884414,
+        "euribor3m": 1.025,
+        "poutcome": "success",
+        "age": 65,
+        "job": "retired"
+      },
+      {
+        "y_score": 0.9856804485502159,
+        "euribor3m": 1.025,
+        "poutcome": "nonexistent",
+        "age": 23,
+        "job": "student"
+      },
+      {
+        "y_score": 0.9853873029089414,
+        "euribor3m": 0.982,
+        "poutcome": "nonexistent",
+        "age": 22,
+        "job": "student"
+      }
+    ],
+    "false_negatives_sample": [
+      {
+        "y_score": 0.15180464949130607,
+        "euribor3m": 0.644,
+        "poutcome": "failure",
+        "age": 49,
+        "job": "admin."
+      },
+      {
+        "y_score": 0.16277550526829662,
+        "euribor3m": 0.64,
+        "poutcome": "failure",
+        "age": 53,
+        "job": "technician"
+      },
+      {
+        "y_score": 0.16824529843668115,
+        "euribor3m": 0.642,
+        "poutcome": "failure",
+        "age": 85,
+        "job": "housemaid"
+      },
+      {
+        "y_score": 0.17656757205770615,
+        "euribor3m": 0.642,
+        "poutcome": "failure",
+        "age": 57,
+        "job": "housemaid"
+      },
+      {
+        "y_score": 0.18988257851770207,
+        "euribor3m": 0.683,
+        "poutcome": "success",
+        "age": 60,
+        "job": "management"
+      }
+    ]
+  }
+}
